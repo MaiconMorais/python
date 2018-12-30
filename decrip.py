@@ -1,4 +1,5 @@
 #Encriptador e Decriptador de mensagem
+#DE INICIANTE PARA INICIANTE
 #CIFRA DE CESAR
 
 import os
@@ -9,7 +10,6 @@ def encriptar(frase, key):
         aux = chr(aux) #Converte o inteiro criptografado e transforma em caractere novamente
         print(aux, end="") #Exibe o caractere ja criptografado na tela
     return 0
-
 
 def decriptar(frase, key):
     key *= -1 #Multiplica a chave por (-1) fará que ela faça o inverso do encriptador.
@@ -30,7 +30,6 @@ x = int(input("O que deseja fazer? ").strip())
 print("-=" * 40)
 
 chave = int(input("Digite a chave: "))
-
 
 if (x == 1):
     encriptar(mensagem, chave)
